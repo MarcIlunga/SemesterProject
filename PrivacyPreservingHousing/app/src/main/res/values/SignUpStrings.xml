@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sign_up_bouton">Sign Up</string>
+    <string name="signup_email">Enter your email adress</string>
+    <string name="signup_name">Enter your name</string>
+</resources>

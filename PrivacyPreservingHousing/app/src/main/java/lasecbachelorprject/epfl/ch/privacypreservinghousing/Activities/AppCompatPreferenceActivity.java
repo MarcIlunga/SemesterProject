@@ -1,4 +1,4 @@
-package lasecbachelorprject.epfl.ch.privacypreservinghousing;
+package lasecbachelorprject.epfl.ch.privacypreservinghousing.Activities;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
