@@ -8,8 +8,8 @@ public class SecureDotProductTest {
 
     @Test
     public void testDotProduct() throws Exception {
-        double[] aliceVector = new double []{1.0};
-        double [] bobVector = new double[]{1.0};
+        double[] aliceVector = new double []{1.0,0.0};
+        double [] bobVector = new double[]{0.0,1.0};
         double res;
 
         SecureDotProductParty alice = new SecureDotProductParty(aliceVector);

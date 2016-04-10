@@ -56,12 +56,10 @@ public class SecureDotProductParty {
         Q = new double[sDimension][sDimension];
         for (int i = 0; i < sDimension ; i++) {
             for (int j = 0; j <sDimension ; j++) {
-
                     Q[i][j] = secureRandom.nextDouble();
 
             }
         }
-
 
 
         //TODO: b!!!
@@ -105,7 +103,7 @@ public class SecureDotProductParty {
 
         for (int i = 0; i < dDimension ; i++) {
             for (int j = 0; j < sDimension ; j++) {
-                c[i] += X[j][i]*factors[i];
+                c[i] += X[j][i]*factors[j];
             }
         }
 
