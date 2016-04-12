@@ -1,12 +1,10 @@
-package crypto;
+package lasecbachelorprject.epfl.ch.privacypreservinghousing.crypto;
 
 import org.junit.Test;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 import java.util.ArrayList;
-
-import lasecbachelorprject.epfl.ch.privacypreservinghousing.crypto.ElGamal;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
