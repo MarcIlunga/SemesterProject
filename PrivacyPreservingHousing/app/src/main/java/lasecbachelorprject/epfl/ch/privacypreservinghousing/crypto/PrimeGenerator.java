@@ -2,7 +2,6 @@ package lasecbachelorprject.epfl.ch.privacypreservinghousing.crypto;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
-import java.util.HashSet;
 
 public class PrimeGenerator {
 
@@ -20,73 +19,46 @@ public class PrimeGenerator {
 
     SecureRandom secureRandom;
 
-    public PrimeGenerator(int minBitLength, int certainty, SecureRandom secureRandom){
-        if(minBitLength < 512 )
+    public PrimeGenerator(int minBitLength, int certainty, SecureRandom secureRandom, boolean lengthCheck){
+        if(minBitLength < 512 && lengthCheck )
                 throw  new IllegalArgumentException("Prime should have at least 512 bits");
         this.minBitLength = minBitLength;
         this.certainty = certainty;
         this.secureRandom = secureRandom;
     }
 
-    public void getSafePrime(){
-        BigInteger r = BigInteger.valueOf(largestExponent);
-        BigInteger t = new BigInteger(minBitLength,certainty,secureRandom);
+
+
+    private void getSafePrime(){
+        BigInteger a;
 
         do {
-            r = r.add(BigInteger.ONE);
-            prime = TWO.multiply(r).multiply(t).add(ONE);
+            a = new BigInteger(minBitLength, secureRandom);
+        } while(a.equals(ZERO));
+
+        BigInteger q;
+
+
+
+        do {
+            q = new BigInteger(minBitLength,certainty,secureRandom);
+            prime = a.multiply(q).add(ONE);
         }
         while(!prime.isProbablePrime(certainty));
 
-        HashSet<BigInteger> factors = new HashSet<>();
-        factors.add(t);
-        factors.add(TWO);
-        if(r.isProbablePrime(certainty)){
-            factors.add((r));
 
-        }
-        else{
-            factors.addAll(primeFactors(r));
-        }
 
-        BigInteger pMinusOne = prime.subtract(ONE), z,lnr;
         boolean isGen;
         do{
             isGen = true;
             generator = new BigInteger(prime.bitLength()-1,secureRandom);
-            for(BigInteger f : factors){
-                z = pMinusOne.divide(f);
-                lnr = generator.modPow(z, prime);
-                    if(lnr.equals(ONE)){
-                        isGen = false;
-                        break;
-                    }
+            generator.modPow(a, prime);
+            if(generator.equals(ONE)){
+                isGen = false;
             }
         }while (!isGen);
     }
 
-    //TODO: Add timer to benchmark
-    public static HashSet<BigInteger> primeFactors(BigInteger n){
-        BigInteger nn = new BigInteger(n.toByteArray()); //clone n
-        HashSet<BigInteger> factors = new HashSet<>();
-        BigInteger dvsr = TWO,
-                dvsrSq = dvsr.multiply(dvsr);
-        while (dvsrSq.compareTo(nn) <= 0) { //divisor <= sqrt of n
-            if (nn.mod(dvsr).equals(ZERO)) { //found a factor (must be prime):
-                factors.add(dvsr); //add it to set
-                while (nn.mod(dvsr).equals(ZERO)) //divide it out from n completely
-                    nn = nn.divide(dvsr); //(ensures later factors are prime)
-            }
-            dvsr = dvsr.add(ONE); //next possible divisor
-            dvsrSq = dvsr.multiply(dvsr);
-        }
-        //if nn's largest prime factor had multiplicity >= 2, nn will now be 1;
-        //if the multimplicity is only 1, the loop will have been exited leaving
-        //nn == this prime factor;
-        if (nn.compareTo(ONE) > 0)
-            factors.add(nn);
-        return factors;
-    }
 
     public BigInteger getPrime(){
         if(prime == null)

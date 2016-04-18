@@ -23,7 +23,7 @@ public class ElGamal {
     //TODO: fix group, generator. Add method for secret key
     public ElGamal(int keySize){
         secureRandom = new SecureRandom();
-        PrimeGenerator primeGenerator = new PrimeGenerator(keySize, certainty,secureRandom);
+        PrimeGenerator primeGenerator = new PrimeGenerator(keySize, certainty,secureRandom, true);
         prime = primeGenerator.getPrime();
         pMinus2 = prime.subtract(TWO);
         generator = primeGenerator.getGenerator();

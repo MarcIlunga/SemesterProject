@@ -18,8 +18,8 @@ public class SecureDotProductTest {
     private double delta= 1e-10;
     @Test
     public void testDotProductForNumbers() throws Exception {
-        double[] aliceVector = new double []{1.0,0.0};
-        double [] bobVector = new double[]{0.0,1.0};
+        double[] aliceVector = new double []{1.0};
+        double [] bobVector = new double[]{1.0};
         double res;
 
         alice = new SecureDotProductParty(aliceVector);
@@ -27,7 +27,7 @@ public class SecureDotProductTest {
 
        magician = new SecureDotProduct(bob, alice);
         res = magician.dotProduct();
-        assertEquals(0.0,res, delta);
+        assertEquals(1.0,res, delta);
 
     }
 

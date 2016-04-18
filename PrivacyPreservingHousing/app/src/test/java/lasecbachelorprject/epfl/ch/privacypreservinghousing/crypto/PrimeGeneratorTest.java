@@ -2,6 +2,7 @@ package lasecbachelorprject.epfl.ch.privacypreservinghousing.crypto;
 
 import org.junit.Test;
 
+import java.math.BigInteger;
 import java.security.SecureRandom;
 
 public class PrimeGeneratorTest {
@@ -11,8 +12,14 @@ public class PrimeGeneratorTest {
 
    @Test
     public void lessThanMinBitsLength(){
-        PrimeGenerator primeGenerator = new PrimeGenerator(1024,certainty,rd);
-        primeGenerator.getSafePrime();
+        PrimeGenerator primeGenerator = new PrimeGenerator(512,certainty,rd,true);
+        BigInteger p =  primeGenerator.getPrime();
+        BigInteger g = primeGenerator.getGenerator();
+
+       BigInteger s = new BigInteger(p.bitLength()-1, rd);
+
+
+
     }
 
 }

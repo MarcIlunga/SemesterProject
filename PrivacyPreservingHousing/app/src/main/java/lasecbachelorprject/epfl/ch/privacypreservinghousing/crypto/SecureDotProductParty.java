@@ -35,6 +35,7 @@ public class SecureDotProductParty {
     private double beta;
     private double[] primeVector;
 
+    //TODO: Copy the values so that the vector can't be modified in the outside
     public SecureDotProductParty(double[] myvector){
         dDimension = myvector.length + 1;
         this.myvector = new double[myvector.length];
@@ -49,6 +50,7 @@ public class SecureDotProductParty {
     }
 
     public void  initiateDotProduct(){
+        //TODO : Constant matrix dimension
         sDimension = 1 + secureRandom.nextInt(5);
         rThRow = secureRandom.nextInt(sDimension);
 
