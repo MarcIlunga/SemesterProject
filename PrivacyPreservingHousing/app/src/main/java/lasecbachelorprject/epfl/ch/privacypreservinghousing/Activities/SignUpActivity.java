@@ -35,12 +35,6 @@ public class SignUpActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
 
 
-        setContentView(R.layout.activity_sign_up);
-
-        mEmailView = (AutoCompleteTextView) findViewById(R.id.signup_email);
-
-        userNameView = (AutoCompleteTextView) findViewById(R.id.singup_form_name);
-
         mPasswordView = (EditText) findViewById(R.id.input_password);
         mPasswordView.setText("");
 

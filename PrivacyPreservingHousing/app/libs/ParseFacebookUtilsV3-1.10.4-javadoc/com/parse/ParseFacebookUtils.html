@@ -119,7 +119,7 @@ extends <a href="http://d.android.com/reference/java/lang/Object.html?is-externa
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#extendAccessToken(com.parse.ParseUser,%20android.content.Context,%20com.parse.SaveCallback)">extendAccessToken</a></strong>(com.parse.ParseUser&nbsp;user,
+<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#extendAccessToken(com.parse.ParseUser,%20android.content.Context,%20com.parse.SaveCallback)">extendAccessToken</a></strong>(com.parse.ParseUser&nbsp;person,
                  <a href="http://d.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content">Context</a>&nbsp;context,
                  com.parse.SaveCallback&nbsp;callback)</code>
 <div class="block"><strong>Deprecated.</strong>&nbsp;
@@ -129,7 +129,7 @@ extends <a href="http://d.android.com/reference/java/lang/Object.html?is-externa
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static boolean</code></td>
-<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#extendAccessTokenIfNeeded(com.parse.ParseUser,%20android.content.Context,%20com.parse.SaveCallback)">extendAccessTokenIfNeeded</a></strong>(com.parse.ParseUser&nbsp;user,
+<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#extendAccessTokenIfNeeded(com.parse.ParseUser,%20android.content.Context,%20com.parse.SaveCallback)">extendAccessTokenIfNeeded</a></strong>(com.parse.ParseUser&nbsp;person,
                          <a href="http://d.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content">Context</a>&nbsp;context,
                          com.parse.SaveCallback&nbsp;callback)</code>
 <div class="block"><strong>Deprecated.</strong>&nbsp;
@@ -188,11 +188,11 @@ extends <a href="http://d.android.com/reference/java/lang/Object.html?is-externa
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static boolean</code></td>
-<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#isLinked(com.parse.ParseUser)">isLinked</a></strong>(com.parse.ParseUser&nbsp;user)</code>&nbsp;</td>
+<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#isLinked(com.parse.ParseUser)">isLinked</a></strong>(com.parse.ParseUser&nbsp;person)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#link(com.parse.ParseUser,%20android.app.Activity)">link</a></strong>(com.parse.ParseUser&nbsp;user,
+<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#link(com.parse.ParseUser,%20android.app.Activity)">link</a></strong>(com.parse.ParseUser&nbsp;person,
     <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity)</code>
 <div class="block"><strong>Deprecated.</strong>&nbsp;
 <div class="block"><i>Please use <a href="../../com/parse/ParseFacebookUtils.html#linkInBackground(com.parse.ParseUser,%20android.app.Activity)"><code>ParseFacebookUtils.linkInBackground(ParseUser, android.app.Activity)</code></a> instead.</i></div>
@@ -201,7 +201,7 @@ extends <a href="http://d.android.com/reference/java/lang/Object.html?is-externa
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#link(com.parse.ParseUser,%20android.app.Activity,%20int)">link</a></strong>(com.parse.ParseUser&nbsp;user,
+<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#link(com.parse.ParseUser,%20android.app.Activity,%20int)">link</a></strong>(com.parse.ParseUser&nbsp;person,
     <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity,
     int&nbsp;activityCode)</code>
 <div class="block"><strong>Deprecated.</strong>&nbsp;
@@ -211,20 +211,20 @@ extends <a href="http://d.android.com/reference/java/lang/Object.html?is-externa
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#link(com.parse.ParseUser,%20android.app.Activity,%20int,%20com.parse.SaveCallback)">link</a></strong>(com.parse.ParseUser&nbsp;user,
+<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#link(com.parse.ParseUser,%20android.app.Activity,%20int,%20com.parse.SaveCallback)">link</a></strong>(com.parse.ParseUser&nbsp;person,
     <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity,
     int&nbsp;activityCode,
     com.parse.SaveCallback&nbsp;callback)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#link(com.parse.ParseUser,%20android.app.Activity,%20com.parse.SaveCallback)">link</a></strong>(com.parse.ParseUser&nbsp;user,
+<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#link(com.parse.ParseUser,%20android.app.Activity,%20com.parse.SaveCallback)">link</a></strong>(com.parse.ParseUser&nbsp;person,
     <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity,
     com.parse.SaveCallback&nbsp;callback)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#link(com.parse.ParseUser,%20java.util.Collection,%20android.app.Activity)">link</a></strong>(com.parse.ParseUser&nbsp;user,
+<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#link(com.parse.ParseUser,%20java.util.Collection,%20android.app.Activity)">link</a></strong>(com.parse.ParseUser&nbsp;person,
     <a href="http://d.android.com/reference/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;permissions,
     <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity)</code>
 <div class="block"><strong>Deprecated.</strong>&nbsp;
@@ -235,7 +235,7 @@ extends <a href="http://d.android.com/reference/java/lang/Object.html?is-externa
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#link(com.parse.ParseUser,%20java.util.Collection,%20android.app.Activity,%20int)">link</a></strong>(com.parse.ParseUser&nbsp;user,
+<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#link(com.parse.ParseUser,%20java.util.Collection,%20android.app.Activity,%20int)">link</a></strong>(com.parse.ParseUser&nbsp;person,
     <a href="http://d.android.com/reference/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;permissions,
     <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity,
     int&nbsp;activityCode)</code>
@@ -247,27 +247,27 @@ extends <a href="http://d.android.com/reference/java/lang/Object.html?is-externa
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#link(com.parse.ParseUser,%20java.util.Collection,%20android.app.Activity,%20int,%20com.parse.SaveCallback)">link</a></strong>(com.parse.ParseUser&nbsp;user,
+<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#link(com.parse.ParseUser,%20java.util.Collection,%20android.app.Activity,%20int,%20com.parse.SaveCallback)">link</a></strong>(com.parse.ParseUser&nbsp;person,
     <a href="http://d.android.com/reference/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;permissions,
     <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity,
     int&nbsp;activityCode,
     com.parse.SaveCallback&nbsp;callback)</code>
 <div class="block">Links a ParseUser to a Facebook account, allowing you to use Facebook for authentication, and
- providing access to Facebook data for the user.</div>
+ providing access to Facebook data for the person.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#link(com.parse.ParseUser,%20java.util.Collection,%20android.app.Activity,%20com.parse.SaveCallback)">link</a></strong>(com.parse.ParseUser&nbsp;user,
+<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#link(com.parse.ParseUser,%20java.util.Collection,%20android.app.Activity,%20com.parse.SaveCallback)">link</a></strong>(com.parse.ParseUser&nbsp;person,
     <a href="http://d.android.com/reference/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;permissions,
     <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity,
     com.parse.SaveCallback&nbsp;callback)</code>
-<div class="block">Links a user using the default activity code if single sign-on is enabled.</div>
+<div class="block">Links a person using the default activity code if single sign-on is enabled.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#link(com.parse.ParseUser,%20java.lang.String,%20java.lang.String,%20java.util.Date)">link</a></strong>(com.parse.ParseUser&nbsp;user,
+<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#link(com.parse.ParseUser,%20java.lang.String,%20java.lang.String,%20java.util.Date)">link</a></strong>(com.parse.ParseUser&nbsp;person,
     <a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;facebookId,
     <a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;accessToken,
     <a href="http://d.android.com/reference/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;expirationDate)</code>
@@ -279,50 +279,50 @@ extends <a href="http://d.android.com/reference/java/lang/Object.html?is-externa
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#link(com.parse.ParseUser,%20java.lang.String,%20java.lang.String,%20java.util.Date,%20com.parse.SaveCallback)">link</a></strong>(com.parse.ParseUser&nbsp;user,
+<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#link(com.parse.ParseUser,%20java.lang.String,%20java.lang.String,%20java.util.Date,%20com.parse.SaveCallback)">link</a></strong>(com.parse.ParseUser&nbsp;person,
     <a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;facebookId,
     <a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;accessToken,
     <a href="http://d.android.com/reference/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;expirationDate,
     com.parse.SaveCallback&nbsp;callback)</code>
 <div class="block">Links a ParseUser to a Facebook account, allowing you to use Facebook for authentication, and
- providing access to Facebook data for the user.</div>
+ providing access to Facebook data for the person.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="http://boltsframework.github.io/docs/android/bolts/Task.html?is-external=true" title="class or interface in bolts">Task</a>&lt;<a href="http://d.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></td>
-<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#linkInBackground(com.parse.ParseUser,%20android.app.Activity)">linkInBackground</a></strong>(com.parse.ParseUser&nbsp;user,
+<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#linkInBackground(com.parse.ParseUser,%20android.app.Activity)">linkInBackground</a></strong>(com.parse.ParseUser&nbsp;person,
                 <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="http://boltsframework.github.io/docs/android/bolts/Task.html?is-external=true" title="class or interface in bolts">Task</a>&lt;<a href="http://d.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></td>
-<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#linkInBackground(com.parse.ParseUser,%20android.app.Activity,%20int)">linkInBackground</a></strong>(com.parse.ParseUser&nbsp;user,
+<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#linkInBackground(com.parse.ParseUser,%20android.app.Activity,%20int)">linkInBackground</a></strong>(com.parse.ParseUser&nbsp;person,
                 <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity,
                 int&nbsp;activityCode)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="http://boltsframework.github.io/docs/android/bolts/Task.html?is-external=true" title="class or interface in bolts">Task</a>&lt;<a href="http://d.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></td>
-<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#linkInBackground(com.parse.ParseUser,%20java.util.Collection,%20android.app.Activity)">linkInBackground</a></strong>(com.parse.ParseUser&nbsp;user,
+<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#linkInBackground(com.parse.ParseUser,%20java.util.Collection,%20android.app.Activity)">linkInBackground</a></strong>(com.parse.ParseUser&nbsp;person,
                 <a href="http://d.android.com/reference/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;permissions,
                 <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="http://boltsframework.github.io/docs/android/bolts/Task.html?is-external=true" title="class or interface in bolts">Task</a>&lt;<a href="http://d.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></td>
-<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#linkInBackground(com.parse.ParseUser,%20java.util.Collection,%20android.app.Activity,%20int)">linkInBackground</a></strong>(com.parse.ParseUser&nbsp;user,
+<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#linkInBackground(com.parse.ParseUser,%20java.util.Collection,%20android.app.Activity,%20int)">linkInBackground</a></strong>(com.parse.ParseUser&nbsp;person,
                 <a href="http://d.android.com/reference/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;permissions,
                 <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity,
                 int&nbsp;activityCode)</code>
 <div class="block">Links a ParseUser to a Facebook account, allowing you to use Facebook for authentication, and
- providing access to Facebook data for the user.</div>
+ providing access to Facebook data for the person.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="http://boltsframework.github.io/docs/android/bolts/Task.html?is-external=true" title="class or interface in bolts">Task</a>&lt;<a href="http://d.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></td>
-<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#linkInBackground(com.parse.ParseUser,%20java.lang.String,%20java.lang.String,%20java.util.Date)">linkInBackground</a></strong>(com.parse.ParseUser&nbsp;user,
+<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#linkInBackground(com.parse.ParseUser,%20java.lang.String,%20java.lang.String,%20java.util.Date)">linkInBackground</a></strong>(com.parse.ParseUser&nbsp;person,
                 <a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;facebookId,
                 <a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;accessToken,
                 <a href="http://d.android.com/reference/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;expirationDate)</code>
 <div class="block">Links a ParseUser to a Facebook account, allowing you to use Facebook for authentication, and
- providing access to Facebook data for the user.</div>
+ providing access to Facebook data for the person.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -350,7 +350,7 @@ extends <a href="http://d.android.com/reference/java/lang/Object.html?is-externa
 <td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#logIn(java.util.Collection,%20android.app.Activity,%20com.parse.LogInCallback)">logIn</a></strong>(<a href="http://d.android.com/reference/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;permissions,
      <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity,
      com.parse.LogInCallback&nbsp;callback)</code>
-<div class="block">Logs in a user using the default activity code if single sign-on is enabled.</div>
+<div class="block">Logs in a person using the default activity code if single sign-on is enabled.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -380,7 +380,7 @@ extends <a href="http://d.android.com/reference/java/lang/Object.html?is-externa
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#saveLatestSessionData(com.parse.ParseUser)">saveLatestSessionData</a></strong>(com.parse.ParseUser&nbsp;user)</code>
+<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#saveLatestSessionData(com.parse.ParseUser)">saveLatestSessionData</a></strong>(com.parse.ParseUser&nbsp;person)</code>
 <div class="block"><strong>Deprecated.</strong>&nbsp;
 <div class="block"><i>Please use <a href="../../com/parse/ParseFacebookUtils.html#saveLatestSessionDataInBackground(com.parse.ParseUser)"><code>ParseFacebookUtils.saveLatestSessionDataInBackground(ParseUser)</code></a> instead.</i></div>
 </div>
@@ -388,20 +388,20 @@ extends <a href="http://d.android.com/reference/java/lang/Object.html?is-externa
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#saveLatestSessionData(com.parse.ParseUser,%20com.parse.SaveCallback)">saveLatestSessionData</a></strong>(com.parse.ParseUser&nbsp;user,
+<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#saveLatestSessionData(com.parse.ParseUser,%20com.parse.SaveCallback)">saveLatestSessionData</a></strong>(com.parse.ParseUser&nbsp;person,
                      com.parse.SaveCallback&nbsp;callback)</code>
-<div class="block">Saves the latest session data to the user.</div>
+<div class="block">Saves the latest session data to the person.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="http://boltsframework.github.io/docs/android/bolts/Task.html?is-external=true" title="class or interface in bolts">Task</a>&lt;<a href="http://d.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></td>
-<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#saveLatestSessionDataInBackground(com.parse.ParseUser)">saveLatestSessionDataInBackground</a></strong>(com.parse.ParseUser&nbsp;user)</code>
-<div class="block">Saves the latest session data to the user.</div>
+<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#saveLatestSessionDataInBackground(com.parse.ParseUser)">saveLatestSessionDataInBackground</a></strong>(com.parse.ParseUser&nbsp;person)</code>
+<div class="block">Saves the latest session data to the person.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static boolean</code></td>
-<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#shouldExtendAccessToken(com.parse.ParseUser)">shouldExtendAccessToken</a></strong>(com.parse.ParseUser&nbsp;user)</code>
+<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#shouldExtendAccessToken(com.parse.ParseUser)">shouldExtendAccessToken</a></strong>(com.parse.ParseUser&nbsp;person)</code>
 <div class="block"><strong>Deprecated.</strong>&nbsp;
 <div class="block"><i>This is now handled automatically by the Facebook SDK.</i></div>
 </div>
@@ -409,21 +409,21 @@ extends <a href="http://d.android.com/reference/java/lang/Object.html?is-externa
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#unlink(com.parse.ParseUser)">unlink</a></strong>(com.parse.ParseUser&nbsp;user)</code>
-<div class="block">Unlinks a user from a Facebook account.</div>
+<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#unlink(com.parse.ParseUser)">unlink</a></strong>(com.parse.ParseUser&nbsp;person)</code>
+<div class="block">Unlinks a person from a Facebook account.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="http://boltsframework.github.io/docs/android/bolts/Task.html?is-external=true" title="class or interface in bolts">Task</a>&lt;<a href="http://d.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></td>
-<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#unlinkInBackground(com.parse.ParseUser)">unlinkInBackground</a></strong>(com.parse.ParseUser&nbsp;user)</code>
-<div class="block">Unlinks a user from a Facebook account in the background.</div>
+<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#unlinkInBackground(com.parse.ParseUser)">unlinkInBackground</a></strong>(com.parse.ParseUser&nbsp;person)</code>
+<div class="block">Unlinks a person from a Facebook account in the background.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#unlinkInBackground(com.parse.ParseUser,%20com.parse.SaveCallback)">unlinkInBackground</a></strong>(com.parse.ParseUser&nbsp;user,
+<td class="colLast"><code><strong><a href="../../com/parse/ParseFacebookUtils.html#unlinkInBackground(com.parse.ParseUser,%20com.parse.SaveCallback)">unlinkInBackground</a></strong>(com.parse.ParseUser&nbsp;person,
                   com.parse.SaveCallback&nbsp;callback)</code>
-<div class="block">Unlinks a user from a Facebook account in the background.</div>
+<div class="block">Unlinks a person from a Facebook account in the background.</div>
 </td>
 </tr>
 </table>
@@ -476,8 +476,8 @@ public static&nbsp;Facebook&nbsp;getFacebook()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>isLinked</h4>
-<pre>public static&nbsp;boolean&nbsp;isLinked(com.parse.ParseUser&nbsp;user)</pre>
-<dl><dt><span class="strong">Returns:</span></dt><dd><code>true</code> if the user is linked to a Facebook account.</dd></dl>
+<pre>public static&nbsp;boolean&nbsp;isLinked(com.parse.ParseUser&nbsp;person)</pre>
+<dl><dt><span class="strong">Returns:</span></dt><dd><code>true</code> if the person is linked to a Facebook account.</dd></dl>
 </li>
 </ul>
 <a name="initialize()">
@@ -545,10 +545,10 @@ public static&nbsp;void&nbsp;initialize(<a href="http://d.android.com/reference/
 <ul class="blockList">
 <li class="blockList">
 <h4>unlink</h4>
-<pre>public static&nbsp;void&nbsp;unlink(com.parse.ParseUser&nbsp;user)
+<pre>public static&nbsp;void&nbsp;unlink(com.parse.ParseUser&nbsp;person)
                    throws com.parse.ParseException</pre>
-<div class="block">Unlinks a user from a Facebook account. Unlinking a user will save the user's data.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>user</code> - The user to unlink from Facebook.</dd>
+<div class="block">Unlinks a person from a Facebook account. Unlinking a person will save the person's data.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>person</code> - The person to unlink from Facebook.</dd>
 <dt><span class="strong">Throws:</span></dt>
 <dd><code>com.parse.ParseException</code></dd></dl>
 </li>
@@ -559,10 +559,10 @@ public static&nbsp;void&nbsp;initialize(<a href="http://d.android.com/reference/
 <ul class="blockList">
 <li class="blockList">
 <h4>unlinkInBackground</h4>
-<pre>public static&nbsp;<a href="http://boltsframework.github.io/docs/android/bolts/Task.html?is-external=true" title="class or interface in bolts">Task</a>&lt;<a href="http://d.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;unlinkInBackground(com.parse.ParseUser&nbsp;user)</pre>
-<div class="block">Unlinks a user from a Facebook account in the background. Unlinking a user will save the user's
+<pre>public static&nbsp;<a href="http://boltsframework.github.io/docs/android/bolts/Task.html?is-external=true" title="class or interface in bolts">Task</a>&lt;<a href="http://d.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;unlinkInBackground(com.parse.ParseUser&nbsp;person)</pre>
+<div class="block">Unlinks a person from a Facebook account in the background. Unlinking a person will save the person's
  data.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>user</code> - The user to unlink from Facebook.</dd>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>person</code> - The person to unlink from Facebook.</dd>
 <dt><span class="strong">Returns:</span></dt><dd>A Task that will be resolved when unlinking has completed.</dd></dl>
 </li>
 </ul>
@@ -572,11 +572,11 @@ public static&nbsp;void&nbsp;initialize(<a href="http://d.android.com/reference/
 <ul class="blockList">
 <li class="blockList">
 <h4>unlinkInBackground</h4>
-<pre>public static&nbsp;void&nbsp;unlinkInBackground(com.parse.ParseUser&nbsp;user,
+<pre>public static&nbsp;void&nbsp;unlinkInBackground(com.parse.ParseUser&nbsp;person,
                       com.parse.SaveCallback&nbsp;callback)</pre>
-<div class="block">Unlinks a user from a Facebook account in the background. Unlinking a user will save the user's
+<div class="block">Unlinks a person from a Facebook account in the background. Unlinking a person will save the person's
  data.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>user</code> - The user to unlink from a Facebook account.</dd><dd><code>callback</code> - Callback for notifying when unlinking is complete.</dd></dl>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>person</code> - The person to unlink from a Facebook account.</dd><dd><code>callback</code> - Callback for notifying when unlinking is complete.</dd></dl>
 </li>
 </ul>
 <a name="linkInBackground(com.parse.ParseUser, java.lang.String, java.lang.String, java.util.Date)">
@@ -585,14 +585,14 @@ public static&nbsp;void&nbsp;initialize(<a href="http://d.android.com/reference/
 <ul class="blockList">
 <li class="blockList">
 <h4>linkInBackground</h4>
-<pre>public static&nbsp;<a href="http://boltsframework.github.io/docs/android/bolts/Task.html?is-external=true" title="class or interface in bolts">Task</a>&lt;<a href="http://d.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;linkInBackground(com.parse.ParseUser&nbsp;user,
+<pre>public static&nbsp;<a href="http://boltsframework.github.io/docs/android/bolts/Task.html?is-external=true" title="class or interface in bolts">Task</a>&lt;<a href="http://d.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;linkInBackground(com.parse.ParseUser&nbsp;person,
                           <a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;facebookId,
                           <a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;accessToken,
                           <a href="http://d.android.com/reference/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;expirationDate)</pre>
 <div class="block">Links a ParseUser to a Facebook account, allowing you to use Facebook for authentication, and
- providing access to Facebook data for the user. This method allows you to handle getting access
- tokens for the user yourself, rather than delegating to the Facebook SDK.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>user</code> - The user to link to a Facebook account.</dd><dd><code>facebookId</code> - The facebook ID of the user being linked.</dd><dd><code>accessToken</code> - The access token for the user.</dd><dd><code>expirationDate</code> - The expiration date of the access token.</dd>
+ providing access to Facebook data for the person. This method allows you to handle getting access
+ tokens for the person yourself, rather than delegating to the Facebook SDK.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>person</code> - The person to link to a Facebook account.</dd><dd><code>facebookId</code> - The facebook ID of the person being linked.</dd><dd><code>accessToken</code> - The access token for the person.</dd><dd><code>expirationDate</code> - The expiration date of the access token.</dd>
 <dt><span class="strong">Returns:</span></dt><dd>A task that will be resolved when linking is completed.</dd></dl>
 </li>
 </ul>
@@ -603,7 +603,7 @@ public static&nbsp;void&nbsp;initialize(<a href="http://d.android.com/reference/
 <li class="blockList">
 <h4>link</h4>
 <pre><a href="http://d.android.com/reference/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
+public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;person,
                    <a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;facebookId,
                    <a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;accessToken,
                    <a href="http://d.android.com/reference/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;expirationDate)</pre>
@@ -617,15 +617,15 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
 <ul class="blockList">
 <li class="blockList">
 <h4>link</h4>
-<pre>public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
+<pre>public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;person,
         <a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;facebookId,
         <a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;accessToken,
         <a href="http://d.android.com/reference/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;expirationDate,
         com.parse.SaveCallback&nbsp;callback)</pre>
 <div class="block">Links a ParseUser to a Facebook account, allowing you to use Facebook for authentication, and
- providing access to Facebook data for the user. This method allows you to handle getting access
- tokens for the user yourself, rather than delegating to the Facebook SDK.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>user</code> - The user to link to a Facebook account.</dd><dd><code>facebookId</code> - The facebook ID of the user being linked.</dd><dd><code>accessToken</code> - The access token for the user.</dd><dd><code>expirationDate</code> - The expiration date of the access token.</dd><dd><code>callback</code> - Callback for notifying when the new authentication data has been saved to the user.</dd></dl>
+ providing access to Facebook data for the person. This method allows you to handle getting access
+ tokens for the person yourself, rather than delegating to the Facebook SDK.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>person</code> - The person to link to a Facebook account.</dd><dd><code>facebookId</code> - The facebook ID of the person being linked.</dd><dd><code>accessToken</code> - The access token for the person.</dd><dd><code>expirationDate</code> - The expiration date of the access token.</dd><dd><code>callback</code> - Callback for notifying when the new authentication data has been saved to the person.</dd></dl>
 </li>
 </ul>
 <a name="linkInBackground(com.parse.ParseUser, java.util.Collection, android.app.Activity, int)">
@@ -634,12 +634,12 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
 <ul class="blockList">
 <li class="blockList">
 <h4>linkInBackground</h4>
-<pre>public static&nbsp;<a href="http://boltsframework.github.io/docs/android/bolts/Task.html?is-external=true" title="class or interface in bolts">Task</a>&lt;<a href="http://d.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;linkInBackground(com.parse.ParseUser&nbsp;user,
+<pre>public static&nbsp;<a href="http://boltsframework.github.io/docs/android/bolts/Task.html?is-external=true" title="class or interface in bolts">Task</a>&lt;<a href="http://d.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;linkInBackground(com.parse.ParseUser&nbsp;person,
                           <a href="http://d.android.com/reference/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;permissions,
                           <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity,
                           int&nbsp;activityCode)</pre>
 <div class="block">Links a ParseUser to a Facebook account, allowing you to use Facebook for authentication, and
- providing access to Facebook data for the user. This method delegates to the Facebook SDK's
+ providing access to Facebook data for the person. This method delegates to the Facebook SDK's
  <code>authenticate()</code> method.
  <p />
  <b>IMPORTANT:</b> Note that single sign-on authentication will not function correctly if you do
@@ -648,7 +648,7 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
  <p />
  From the Facebook SDK documentation:
  <p />
- Starts either an Activity or a dialog which prompts the user to log in to Facebook and grant
+ Starts either an Activity or a dialog which prompts the person to log in to Facebook and grant
  the requested permissions to the given application.
  <p />
  This method will, when possible, use Facebook's single sign-on for Android to obtain an access
@@ -658,10 +658,10 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
  <p />
  Because this process will not be available for all users, if single sign-on is not possible,
  this method will automatically fall back to the OAuth 2.0 User-Agent flow. In this flow, the
- user credentials are handled by Facebook in an embedded WebView, not by the client application.
+ person credentials are handled by Facebook in an embedded WebView, not by the client application.
  As such, the dialog makes a network request and renders HTML content rather than a native UI.
  The access token is retrieved from a redirect to a special URL that the WebView handles.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>user</code> - The user to link to a Facebook account.</dd><dd><code>permissions</code> - A list of permissions to be used when logging in. Many of these constants are defined
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>person</code> - The person to link to a Facebook account.</dd><dd><code>permissions</code> - A list of permissions to be used when logging in. Many of these constants are defined
           here: <a href="../../com/parse/ParseFacebookUtils.Permissions.html" title="class in com.parse"><code>ParseFacebookUtils.Permissions</code></a>.</dd><dd><code>activity</code> - The Android activity in which we want to display the authorization dialog.</dd><dd><code>activityCode</code> - Single sign-on requires an activity result to be called back to the client application
           -- if you are waiting on other activities to return data, pass a custom activity code
           here to avoid collisions.</dd>
@@ -674,7 +674,7 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
 <ul class="blockList">
 <li class="blockList">
 <h4>linkInBackground</h4>
-<pre>public static&nbsp;<a href="http://boltsframework.github.io/docs/android/bolts/Task.html?is-external=true" title="class or interface in bolts">Task</a>&lt;<a href="http://d.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;linkInBackground(com.parse.ParseUser&nbsp;user,
+<pre>public static&nbsp;<a href="http://boltsframework.github.io/docs/android/bolts/Task.html?is-external=true" title="class or interface in bolts">Task</a>&lt;<a href="http://d.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;linkInBackground(com.parse.ParseUser&nbsp;person,
                           <a href="http://d.android.com/reference/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;permissions,
                           <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity)</pre>
 <dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../com/parse/ParseFacebookUtils.html#linkInBackground(com.parse.ParseUser,%20java.util.Collection,%20android.app.Activity,%20int)"><code>ParseFacebookUtils.linkInBackground(ParseUser, java.util.Collection, android.app.Activity, int)</code></a>, 
@@ -687,7 +687,7 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
 <ul class="blockList">
 <li class="blockList">
 <h4>linkInBackground</h4>
-<pre>public static&nbsp;<a href="http://boltsframework.github.io/docs/android/bolts/Task.html?is-external=true" title="class or interface in bolts">Task</a>&lt;<a href="http://d.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;linkInBackground(com.parse.ParseUser&nbsp;user,
+<pre>public static&nbsp;<a href="http://boltsframework.github.io/docs/android/bolts/Task.html?is-external=true" title="class or interface in bolts">Task</a>&lt;<a href="http://d.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;linkInBackground(com.parse.ParseUser&nbsp;person,
                           <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity,
                           int&nbsp;activityCode)</pre>
 <dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../com/parse/ParseFacebookUtils.html#linkInBackground(com.parse.ParseUser,%20java.util.Collection,%20android.app.Activity,%20int)"><code>ParseFacebookUtils.linkInBackground(ParseUser, java.util.Collection, android.app.Activity, int)</code></a></dd></dl>
@@ -699,7 +699,7 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
 <ul class="blockList">
 <li class="blockList">
 <h4>linkInBackground</h4>
-<pre>public static&nbsp;<a href="http://boltsframework.github.io/docs/android/bolts/Task.html?is-external=true" title="class or interface in bolts">Task</a>&lt;<a href="http://d.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;linkInBackground(com.parse.ParseUser&nbsp;user,
+<pre>public static&nbsp;<a href="http://boltsframework.github.io/docs/android/bolts/Task.html?is-external=true" title="class or interface in bolts">Task</a>&lt;<a href="http://d.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;linkInBackground(com.parse.ParseUser&nbsp;person,
                           <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity)</pre>
 <dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../com/parse/ParseFacebookUtils.html#linkInBackground(com.parse.ParseUser,%20java.util.Collection,%20android.app.Activity,%20int)"><code>ParseFacebookUtils.linkInBackground(ParseUser, java.util.Collection, android.app.Activity, int)</code></a>, 
 <code>FacebookAuthenticationProvider.DEFAULT_AUTH_ACTIVITY_CODE</code></dd></dl>
@@ -711,13 +711,13 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
 <ul class="blockList">
 <li class="blockList">
 <h4>link</h4>
-<pre>public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
+<pre>public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;person,
         <a href="http://d.android.com/reference/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;permissions,
         <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity,
         int&nbsp;activityCode,
         com.parse.SaveCallback&nbsp;callback)</pre>
 <div class="block">Links a ParseUser to a Facebook account, allowing you to use Facebook for authentication, and
- providing access to Facebook data for the user. This method delegates to the Facebook SDK's
+ providing access to Facebook data for the person. This method delegates to the Facebook SDK's
  <code>authenticate()</code> method.
  <p />
  <b>IMPORTANT:</b> Note that single sign-on authentication will not function correctly if you do
@@ -726,7 +726,7 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
  <p />
  From the Facebook SDK documentation:
  <p />
- Starts either an Activity or a dialog which prompts the user to log in to Facebook and grant
+ Starts either an Activity or a dialog which prompts the person to log in to Facebook and grant
  the requested permissions to the given application.
  <p />
  This method will, when possible, use Facebook's single sign-on for Android to obtain an access
@@ -736,10 +736,10 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
  <p />
  Because this process will not be available for all users, if single sign-on is not possible,
  this method will automatically fall back to the OAuth 2.0 User-Agent flow. In this flow, the
- user credentials are handled by Facebook in an embedded WebView, not by the client application.
+ person credentials are handled by Facebook in an embedded WebView, not by the client application.
  As such, the dialog makes a network request and renders HTML content rather than a native UI.
  The access token is retrieved from a redirect to a special URL that the WebView handles.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>user</code> - The user to link to a Facebook account.</dd><dd><code>permissions</code> - A list of permissions to be used when logging in. Many of these constants are defined
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>person</code> - The person to link to a Facebook account.</dd><dd><code>permissions</code> - A list of permissions to be used when logging in. Many of these constants are defined
           here: <a href="../../com/parse/ParseFacebookUtils.Permissions.html" title="class in com.parse"><code>ParseFacebookUtils.Permissions</code></a>.</dd><dd><code>activity</code> - The Android activity in which we want to display the authorization dialog.</dd><dd><code>activityCode</code> - Single sign-on requires an activity result to be called back to the client application
           -- if you are waiting on other activities to return data, pass a custom activity code
           here to avoid collisions.</dd><dd><code>callback</code> - Callback for notifying the calling application when the Facebook authentication has
@@ -752,11 +752,11 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
 <ul class="blockList">
 <li class="blockList">
 <h4>link</h4>
-<pre>public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
+<pre>public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;person,
         <a href="http://d.android.com/reference/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;permissions,
         <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity,
         com.parse.SaveCallback&nbsp;callback)</pre>
-<div class="block">Links a user using the default activity code if single sign-on is enabled.</div>
+<div class="block">Links a person using the default activity code if single sign-on is enabled.</div>
 <dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../com/parse/ParseFacebookUtils.html#link(com.parse.ParseUser,%20java.util.Collection,%20android.app.Activity,%20int,%20com.parse.SaveCallback)"><code>ParseFacebookUtils.link(ParseUser, Collection, Activity, int, SaveCallback)</code></a></dd></dl>
 </li>
 </ul>
@@ -767,7 +767,7 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
 <li class="blockList">
 <h4>link</h4>
 <pre><a href="http://d.android.com/reference/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
+public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;person,
                    <a href="http://d.android.com/reference/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;permissions,
                    <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity,
                    int&nbsp;activityCode)</pre>
@@ -782,7 +782,7 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
 <li class="blockList">
 <h4>link</h4>
 <pre><a href="http://d.android.com/reference/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
+public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;person,
                    <a href="http://d.android.com/reference/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;permissions,
                    <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity)</pre>
 <div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>Please use <a href="../../com/parse/ParseFacebookUtils.html#linkInBackground(com.parse.ParseUser,%20java.util.Collection,%20android.app.Activity)"><code>ParseFacebookUtils.linkInBackground(ParseUser, java.util.Collection,
@@ -795,7 +795,7 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
 <ul class="blockList">
 <li class="blockList">
 <h4>link</h4>
-<pre>public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
+<pre>public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;person,
         <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity,
         int&nbsp;activityCode,
         com.parse.SaveCallback&nbsp;callback)</pre>
@@ -808,7 +808,7 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
 <ul class="blockList">
 <li class="blockList">
 <h4>link</h4>
-<pre>public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
+<pre>public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;person,
         <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity,
         com.parse.SaveCallback&nbsp;callback)</pre>
 <dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../com/parse/ParseFacebookUtils.html#link(com.parse.ParseUser,%20java.util.Collection,%20android.app.Activity,%20int,%20com.parse.SaveCallback)"><code>ParseFacebookUtils.link(ParseUser, Collection, Activity, int, SaveCallback)</code></a></dd></dl>
@@ -821,7 +821,7 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
 <li class="blockList">
 <h4>link</h4>
 <pre><a href="http://d.android.com/reference/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
+public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;person,
                    <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity,
                    int&nbsp;activityCode)</pre>
 <div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>Please use <a href="../../com/parse/ParseFacebookUtils.html#linkInBackground(com.parse.ParseUser,%20android.app.Activity,%20int)"><code>ParseFacebookUtils.linkInBackground(ParseUser, android.app.Activity, int)</code></a> instead.</i></div>
@@ -834,7 +834,7 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
 <li class="blockList">
 <h4>link</h4>
 <pre><a href="http://d.android.com/reference/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
+public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;person,
                    <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity)</pre>
 <div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>Please use <a href="../../com/parse/ParseFacebookUtils.html#linkInBackground(com.parse.ParseUser,%20android.app.Activity)"><code>ParseFacebookUtils.linkInBackground(ParseUser, android.app.Activity)</code></a> instead.</i></div>
 </li>
@@ -848,10 +848,10 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
 <pre>public static&nbsp;<a href="http://boltsframework.github.io/docs/android/bolts/Task.html?is-external=true" title="class or interface in bolts">Task</a>&lt;com.parse.ParseUser&gt;&nbsp;logInInBackground(<a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;facebookId,
                                           <a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;accessToken,
                                           <a href="http://d.android.com/reference/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;expirationDate)</pre>
-<div class="block">Logs in a ParseUser using Facebook for authentication. If a user for the given Facebook
- credentials does not already exist, a new user will be created. This method allows you to
- handle getting access tokens for the user yourself, rather than delegating to the Facebook SDK.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>facebookId</code> - The facebook ID of the user being linked.</dd><dd><code>accessToken</code> - The access token for the user.</dd><dd><code>expirationDate</code> - The expiration date of the access token.</dd>
+<div class="block">Logs in a ParseUser using Facebook for authentication. If a person for the given Facebook
+ credentials does not already exist, a new person will be created. This method allows you to
+ handle getting access tokens for the person yourself, rather than delegating to the Facebook SDK.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>facebookId</code> - The facebook ID of the person being linked.</dd><dd><code>accessToken</code> - The access token for the person.</dd><dd><code>expirationDate</code> - The expiration date of the access token.</dd>
 <dt><span class="strong">Returns:</span></dt><dd>A Task that will be resolved when logging in is completed.</dd></dl>
 </li>
 </ul>
@@ -865,10 +865,10 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
          <a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;accessToken,
          <a href="http://d.android.com/reference/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;expirationDate,
          com.parse.LogInCallback&nbsp;callback)</pre>
-<div class="block">Logs in a ParseUser using Facebook for authentication. If a user for the given Facebook
- credentials does not already exist, a new user will be created. This method allows you to
- handle getting access tokens for the user yourself, rather than delegating to the Facebook SDK.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>facebookId</code> - The facebook ID of the user being linked.</dd><dd><code>accessToken</code> - The access token for the user.</dd><dd><code>expirationDate</code> - The expiration date of the access token.</dd><dd><code>callback</code> - Callback for notifying when the new authentication data has been saved to the user.</dd></dl>
+<div class="block">Logs in a ParseUser using Facebook for authentication. If a person for the given Facebook
+ credentials does not already exist, a new person will be created. This method allows you to
+ handle getting access tokens for the person yourself, rather than delegating to the Facebook SDK.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>facebookId</code> - The facebook ID of the person being linked.</dd><dd><code>accessToken</code> - The access token for the person.</dd><dd><code>expirationDate</code> - The expiration date of the access token.</dd><dd><code>callback</code> - Callback for notifying when the new authentication data has been saved to the person.</dd></dl>
 </li>
 </ul>
 <a name="logInInBackground(java.util.Collection, android.app.Activity, int)">
@@ -880,8 +880,8 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
 <pre>public static&nbsp;<a href="http://boltsframework.github.io/docs/android/bolts/Task.html?is-external=true" title="class or interface in bolts">Task</a>&lt;com.parse.ParseUser&gt;&nbsp;logInInBackground(<a href="http://d.android.com/reference/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;permissions,
                                           <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity,
                                           int&nbsp;activityCode)</pre>
-<div class="block">Logs in a ParseUser using Facebook for authentication. If a user for the given Facebook
- credentials does not already exist, a new user will be created. This method delegates to the
+<div class="block">Logs in a ParseUser using Facebook for authentication. If a person for the given Facebook
+ credentials does not already exist, a new person will be created. This method delegates to the
  Facebook SDK's <code>authenticate()</code> method.
  <p />
  <b>IMPORTANT:</b> Note that single sign-on authentication will not function correctly if you do
@@ -890,7 +890,7 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
  <p />
  From the Facebook SDK documentation:
  <p />
- Starts either an Activity or a dialog which prompts the user to log in to Facebook and grant
+ Starts either an Activity or a dialog which prompts the person to log in to Facebook and grant
  the requested permissions to the given application.
  <p />
  This method will, when possible, use Facebook's single sign-on for Android to obtain an access
@@ -900,7 +900,7 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
  <p />
  Because this process will not be available for all users, if single sign-on is not possible,
  this method will automatically fall back to the OAuth 2.0 User-Agent flow. In this flow, the
- user credentials are handled by Facebook in an embedded WebView, not by the client application.
+ person credentials are handled by Facebook in an embedded WebView, not by the client application.
  As such, the dialog makes a network request and renders HTML content rather than a native UI.
  The access token is retrieved from a redirect to a special URL that the WebView handles.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>permissions</code> - A list of permissions to be used when logging in. Many of these constants are defined
@@ -920,8 +920,8 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
          <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity,
          int&nbsp;activityCode,
          com.parse.LogInCallback&nbsp;callback)</pre>
-<div class="block">Logs in a ParseUser using Facebook for authentication. If a user for the given Facebook
- credentials does not already exist, a new user will be created. This method delegates to the
+<div class="block">Logs in a ParseUser using Facebook for authentication. If a person for the given Facebook
+ credentials does not already exist, a new person will be created. This method delegates to the
  Facebook SDK's <code>authenticate()</code> method.
  <p />
  <b>IMPORTANT:</b> Note that single sign-on authentication will not function correctly if you do
@@ -930,7 +930,7 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
  <p />
  From the Facebook SDK documentation:
  <p />
- Starts either an Activity or a dialog which prompts the user to log in to Facebook and grant
+ Starts either an Activity or a dialog which prompts the person to log in to Facebook and grant
  the requested permissions to the given application.
  <p />
  This method will, when possible, use Facebook's single sign-on for Android to obtain an access
@@ -940,7 +940,7 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
  <p />
  Because this process will not be available for all users, if single sign-on is not possible,
  this method will automatically fall back to the OAuth 2.0 User-Agent flow. In this flow, the
- user credentials are handled by Facebook in an embedded WebView, not by the client application.
+ person credentials are handled by Facebook in an embedded WebView, not by the client application.
  As such, the dialog makes a network request and renders HTML content rather than a native UI.
  The access token is retrieved from a redirect to a special URL that the WebView handles.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>permissions</code> - A list of permissions to be used when logging in. Many of these constants are defined
@@ -971,7 +971,7 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
 <pre>public static&nbsp;void&nbsp;logIn(<a href="http://d.android.com/reference/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="http://d.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;permissions,
          <a href="http://d.android.com/reference/android/app/Activity.html?is-external=true" title="class or interface in android.app">Activity</a>&nbsp;activity,
          com.parse.LogInCallback&nbsp;callback)</pre>
-<div class="block">Logs in a user using the default activity code if single sign-on is enabled.</div>
+<div class="block">Logs in a person using the default activity code if single sign-on is enabled.</div>
 <dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../com/parse/ParseFacebookUtils.html#logIn(java.util.Collection,%20android.app.Activity,%20int,%20com.parse.LogInCallback)"><code>ParseFacebookUtils.logIn(Collection, Activity, int, LogInCallback)</code></a></dd></dl>
 </li>
 </ul>
@@ -1013,10 +1013,10 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
 <ul class="blockList">
 <li class="blockList">
 <h4>saveLatestSessionDataInBackground</h4>
-<pre>public static&nbsp;<a href="http://boltsframework.github.io/docs/android/bolts/Task.html?is-external=true" title="class or interface in bolts">Task</a>&lt;<a href="http://d.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;saveLatestSessionDataInBackground(com.parse.ParseUser&nbsp;user)</pre>
-<div class="block">Saves the latest session data to the user. Call this after requesting new read or publish
- permissions for the user's Facebook session.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>user</code> - The user whose session information should be updated.</dd>
+<pre>public static&nbsp;<a href="http://boltsframework.github.io/docs/android/bolts/Task.html?is-external=true" title="class or interface in bolts">Task</a>&lt;<a href="http://d.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;saveLatestSessionDataInBackground(com.parse.ParseUser&nbsp;person)</pre>
+<div class="block">Saves the latest session data to the person. Call this after requesting new read or publish
+ permissions for the person's Facebook session.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>person</code> - The person whose session information should be updated.</dd>
 <dt><span class="strong">Returns:</span></dt><dd>A Task that is resolved when the session save is completed.</dd></dl>
 </li>
 </ul>
@@ -1026,11 +1026,11 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
 <ul class="blockList">
 <li class="blockList">
 <h4>saveLatestSessionData</h4>
-<pre>public static&nbsp;void&nbsp;saveLatestSessionData(com.parse.ParseUser&nbsp;user,
+<pre>public static&nbsp;void&nbsp;saveLatestSessionData(com.parse.ParseUser&nbsp;person,
                          com.parse.SaveCallback&nbsp;callback)</pre>
-<div class="block">Saves the latest session data to the user. Call this after requesting new read or publish
- permissions for the user's Facebook session.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>user</code> - The user whose session information should be updated.</dd><dd><code>callback</code> - Callback invoked when the session data has been saved.</dd></dl>
+<div class="block">Saves the latest session data to the person. Call this after requesting new read or publish
+ permissions for the person's Facebook session.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>person</code> - The person whose session information should be updated.</dd><dd><code>callback</code> - Callback invoked when the session data has been saved.</dd></dl>
 </li>
 </ul>
 <a name="saveLatestSessionData(com.parse.ParseUser)">
@@ -1040,7 +1040,7 @@ public static&nbsp;void&nbsp;link(com.parse.ParseUser&nbsp;user,
 <li class="blockList">
 <h4>saveLatestSessionData</h4>
 <pre><a href="http://d.android.com/reference/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public static&nbsp;void&nbsp;saveLatestSessionData(com.parse.ParseUser&nbsp;user)</pre>
+public static&nbsp;void&nbsp;saveLatestSessionData(com.parse.ParseUser&nbsp;person)</pre>
 <div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>Please use <a href="../../com/parse/ParseFacebookUtils.html#saveLatestSessionDataInBackground(com.parse.ParseUser)"><code>ParseFacebookUtils.saveLatestSessionDataInBackground(ParseUser)</code></a> instead.</i></div>
 </li>
 </ul>
@@ -1051,7 +1051,7 @@ public static&nbsp;void&nbsp;saveLatestSessionData(com.parse.ParseUser&nbsp;user
 <li class="blockList">
 <h4>shouldExtendAccessToken</h4>
 <pre><a href="http://d.android.com/reference/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public static&nbsp;boolean&nbsp;shouldExtendAccessToken(com.parse.ParseUser&nbsp;user)</pre>
+public static&nbsp;boolean&nbsp;shouldExtendAccessToken(com.parse.ParseUser&nbsp;person)</pre>
 <div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>This is now handled automatically by the Facebook SDK.</i></div>
 </li>
 </ul>
@@ -1062,7 +1062,7 @@ public static&nbsp;boolean&nbsp;shouldExtendAccessToken(com.parse.ParseUser&nbsp
 <li class="blockList">
 <h4>extendAccessToken</h4>
 <pre><a href="http://d.android.com/reference/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public static&nbsp;void&nbsp;extendAccessToken(com.parse.ParseUser&nbsp;user,
+public static&nbsp;void&nbsp;extendAccessToken(com.parse.ParseUser&nbsp;person,
                                 <a href="http://d.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content">Context</a>&nbsp;context,
                                 com.parse.SaveCallback&nbsp;callback)</pre>
 <div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>This is now handled automatically by the Facebook SDK.</i></div>
@@ -1075,7 +1075,7 @@ public static&nbsp;void&nbsp;extendAccessToken(com.parse.ParseUser&nbsp;user,
 <li class="blockList">
 <h4>extendAccessTokenIfNeeded</h4>
 <pre><a href="http://d.android.com/reference/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public static&nbsp;boolean&nbsp;extendAccessTokenIfNeeded(com.parse.ParseUser&nbsp;user,
+public static&nbsp;boolean&nbsp;extendAccessTokenIfNeeded(com.parse.ParseUser&nbsp;person,
                                            <a href="http://d.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content">Context</a>&nbsp;context,
                                            com.parse.SaveCallback&nbsp;callback)</pre>
 <div class="block"><span class="strong">Deprecated.</span>&nbsp;<i>This is now handled automatically by the Facebook SDK.</i></div>
